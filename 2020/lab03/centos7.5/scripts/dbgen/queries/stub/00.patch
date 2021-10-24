@@ -1,0 +1,449 @@
+diff --git a/tmp/stub/01.sql b/stub/01.sql
+index 28c12b6..371a784 100644
+--- a/tmp/stub/01.sql
++++ b/stub/01.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q1)
+--- using default substitutions
+-
+ 
+ select
+ 	l_returnflag,
+@@ -23,4 +21,4 @@ group by
+ order by
+ 	l_returnflag,
+ 	l_linestatus;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/02.sql b/stub/02.sql
+index b36cd7e..caa4ba1 100644
+--- a/tmp/stub/02.sql
++++ b/stub/02.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q2)
+--- using default substitutions
+-
+ 
+ select
+ 	s_acctbal,
+@@ -45,4 +43,4 @@ order by
+ 	n_name,
+ 	s_name,
+ 	p_partkey;
+-where rownum <= 100;
++--where rownum <= 100;
+diff --git a/tmp/stub/03.sql b/stub/03.sql
+index 6dcfe2e..eacb81e 100644
+--- a/tmp/stub/03.sql
++++ b/stub/03.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q3)
+--- using default substitutions
+-
+ 
+ select
+ 	l_orderkey,
+@@ -24,4 +22,4 @@ group by
+ order by
+ 	revenue desc,
+ 	o_orderdate;
+-where rownum <= 10;
++--where rownum <= 10;
+diff --git a/tmp/stub/04.sql b/stub/04.sql
+index 0d1ecf4..d7734d3 100644
+--- a/tmp/stub/04.sql
++++ b/stub/04.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q4)
+--- using default substitutions
+-
+ 
+ select
+ 	o_orderpriority,
+@@ -23,4 +21,4 @@ group by
+ 	o_orderpriority
+ order by
+ 	o_orderpriority;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/05.sql b/stub/05.sql
+index a8dbba9..45c9616 100644
+--- a/tmp/stub/05.sql
++++ b/stub/05.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q5)
+--- using default substitutions
+-
+ 
+ select
+ 	n_name,
+@@ -26,4 +24,4 @@ group by
+ 	n_name
+ order by
+ 	revenue desc;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/06.sql b/stub/06.sql
+index f1d1174..4d9e781 100644
+--- a/tmp/stub/06.sql
++++ b/stub/06.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q6)
+--- using default substitutions
+-
+ 
+ select
+ 	sum(l_extendedprice * l_discount) as revenue
+@@ -11,4 +9,4 @@ where
+ 	and l_shipdate < date '1994-01-01' + interval '1' year
+ 	and l_discount between .06 - 0.01 and .06 + 0.01
+ 	and l_quantity < 24;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/07.sql b/stub/07.sql
+index ec5e4ad..cc4bd74 100644
+--- a/tmp/stub/07.sql
++++ b/stub/07.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q7)
+--- using default substitutions
+-
+ 
+ select
+ 	supp_nation,
+@@ -32,7 +30,7 @@ from
+ 				or (n1.n_name = 'GERMANY' and n2.n_name = 'FRANCE')
+ 			)
+ 			and l_shipdate between date '1995-01-01' and date '1996-12-31'
+-	) as shipping
++	) --as shipping
+ group by
+ 	supp_nation,
+ 	cust_nation,
+@@ -41,4 +39,4 @@ order by
+ 	supp_nation,
+ 	cust_nation,
+ 	l_year;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/08.sql b/stub/08.sql
+index 7492d53..07ded42 100644
+--- a/tmp/stub/08.sql
++++ b/stub/08.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q8)
+--- using default substitutions
+-
+ 
+ select
+ 	o_year,
+@@ -34,9 +32,9 @@ from
+ 			and s_nationkey = n2.n_nationkey
+ 			and o_orderdate between date '1995-01-01' and date '1996-12-31'
+ 			and p_type = 'ECONOMY ANODIZED STEEL'
+-	) as all_nations
++	) --as all_nations
+ group by
+ 	o_year
+ order by
+ 	o_year;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/09.sql b/stub/09.sql
+index 1324bc1..e521c56 100644
+--- a/tmp/stub/09.sql
++++ b/stub/09.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q9)
+--- using default substitutions
+-
+ 
+ select
+ 	nation,
+@@ -27,11 +25,11 @@ from
+ 			and o_orderkey = l_orderkey
+ 			and s_nationkey = n_nationkey
+ 			and p_name like '%green%'
+-	) as profit
++	) --as profit
+ group by
+ 	nation,
+ 	o_year
+ order by
+ 	nation,
+ 	o_year desc;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/10.sql b/stub/10.sql
+index 8e2f1ff..e29ee72 100644
+--- a/tmp/stub/10.sql
++++ b/stub/10.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q10)
+--- using default substitutions
+-
+ 
+ select
+ 	c_custkey,
+@@ -33,4 +31,4 @@ group by
+ 	c_comment
+ order by
+ 	revenue desc;
+-where rownum <= 20;
++--where rownum <= 20;
+diff --git a/tmp/stub/11.sql b/stub/11.sql
+index 33fd33f..f3ce290 100644
+--- a/tmp/stub/11.sql
++++ b/stub/11.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q11)
+--- using default substitutions
+-
+ 
+ select
+ 	ps_partkey,
+@@ -29,4 +27,4 @@ group by
+ 		)
+ order by
+ 	value desc;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/12.sql b/stub/12.sql
+index 7ed5c32..8b732fc 100644
+--- a/tmp/stub/12.sql
++++ b/stub/12.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q12)
+--- using default substitutions
+-
+ 
+ select
+ 	l_shipmode,
+@@ -30,4 +28,4 @@ group by
+ 	l_shipmode
+ order by
+ 	l_shipmode;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/13.sql b/stub/13.sql
+index 0d77832..b5d4e7a 100644
+--- a/tmp/stub/13.sql
++++ b/stub/13.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q13)
+--- using default substitutions
+-
+ 
+ select
+ 	c_count,
+@@ -9,17 +7,18 @@ from
+ 	(
+ 		select
+ 			c_custkey,
+-			count(o_orderkey)
++			--count(o_orderkey)
++			count(o_orderkey) as c_count
+ 		from
+ 			customer left outer join orders on
+ 				c_custkey = o_custkey
+ 				and o_comment not like '%special%requests%'
+ 		group by
+ 			c_custkey
+-	) as c_orders (c_custkey, c_count)
++	) --as c_orders (c_custkey, c_count)
+ group by
+ 	c_count
+ order by
+ 	custdist desc,
+ 	c_count desc;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/14.sql b/stub/14.sql
+index 711bb5b..f7ef73f 100644
+--- a/tmp/stub/14.sql
++++ b/stub/14.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q14)
+--- using default substitutions
+-
+ 
+ select
+ 	100.00 * sum(case
+@@ -15,4 +13,4 @@ where
+ 	l_partkey = p_partkey
+ 	and l_shipdate >= date '1995-09-01'
+ 	and l_shipdate < date '1995-09-01' + interval '1' month;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/15.sql b/stub/15.sql
+index 567c826..d6ebf5f 100644
+--- a/tmp/stub/15.sql
++++ b/stub/15.sql
+@@ -1,5 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q15)
+--- using default substitutions
+ 
+ create view revenue0 (supplier_no, total_revenue) as
+ 	select
+@@ -35,4 +34,4 @@ order by
+ 	s_suppkey;
+ 
+ drop view revenue0;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/16.sql b/stub/16.sql
+index a0339ea..6a4816e 100644
+--- a/tmp/stub/16.sql
++++ b/stub/16.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q16)
+--- using default substitutions
+-
+ 
+ select
+ 	p_brand,
+@@ -32,4 +30,4 @@ order by
+ 	p_brand,
+ 	p_type,
+ 	p_size;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/17.sql b/stub/17.sql
+index 7c12a7d..9aebd0b 100644
+--- a/tmp/stub/17.sql
++++ b/stub/17.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q17)
+--- using default substitutions
+-
+ 
+ select
+ 	sum(l_extendedprice) / 7.0 as avg_yearly
+@@ -19,4 +17,4 @@ where
+ 		where
+ 			l_partkey = p_partkey
+ 	);
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/18.sql b/stub/18.sql
+index e872548..fb8758b 100644
+--- a/tmp/stub/18.sql
++++ b/stub/18.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q18)
+--- using default substitutions
+-
+ 
+ select
+ 	c_name,
+@@ -34,4 +32,4 @@ group by
+ order by
+ 	o_totalprice desc,
+ 	o_orderdate;
+-where rownum <= 100;
++--where rownum <= 100;
+diff --git a/tmp/stub/19.sql b/stub/19.sql
+index 3213ebf..09efd05 100644
+--- a/tmp/stub/19.sql
++++ b/stub/19.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q19)
+--- using default substitutions
+-
+ 
+ select
+ 	sum(l_extendedprice* (1 - l_discount)) as revenue
+@@ -37,4 +35,4 @@ where
+ 		and l_shipmode in ('AIR', 'AIR REG')
+ 		and l_shipinstruct = 'DELIVER IN PERSON'
+ 	);
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/20.sql b/stub/20.sql
+index a90c971..7a6ebb0 100644
+--- a/tmp/stub/20.sql
++++ b/stub/20.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q20)
+--- using default substitutions
+-
+ 
+ select
+ 	s_name,
+@@ -39,4 +37,4 @@ where
+ 	and n_name = 'CANADA'
+ order by
+ 	s_name;
+-where rownum <= -1;
++--where rownum <= -1;
+diff --git a/tmp/stub/21.sql b/stub/21.sql
+index 2cf29f7..e110f78 100644
+--- a/tmp/stub/21.sql
++++ b/stub/21.sql
+@@ -1,6 +1,10 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q21)
+ -- using default substitutions
++-- Status: VERIFIED
+ 
++-- XXX: To get 'Execution Plan, Predicate Information and Statistics', please
++--      enable the line in the following
++-- set autotrace on;
+ 
+ select
+ 	s_name,
+@@ -41,4 +45,4 @@ group by
+ order by
+ 	numwait desc,
+ 	s_name;
+-where rownum <= 100;
++--where rownum <= 100;
+diff --git a/tmp/stub/22.sql b/stub/22.sql
+index d9de76f..3193e29 100644
+--- a/tmp/stub/22.sql
++++ b/stub/22.sql
+@@ -1,6 +1,4 @@
+ -- TPC-H/TPC-R Pricing Summary Report Query (Q22)
+--- using default substitutions
+-
+ 
+ select
+ 	cntrycode,
+@@ -9,12 +7,14 @@ select
+ from
+ 	(
+ 		select
+-			substring(c_phone from 1 for 2) as cntrycode,
++			--substring(c_phone from 1 for 2) as cntrycode,
++			substr(c_phone, 1, 2) as cntrycode,
+ 			c_acctbal
+ 		from
+ 			customer
+ 		where
+-			substring(c_phone from 1 for 2) in
++			--substring(c_phone from 1 for 2) in
++			substr(c_phone, 1, 2) in
+ 				('13', '31', '23', '29', '30', '18', '17')
+ 			and c_acctbal > (
+ 				select
+@@ -23,7 +23,8 @@ from
+ 					customer
+ 				where
+ 					c_acctbal > 0.00
+-					and substring(c_phone from 1 for 2) in
++					--and substring(c_phone from 1 for 2) in
++					and substr(c_phone, 1, 2) in
+ 						('13', '31', '23', '29', '30', '18', '17')
+ 			)
+ 			and not exists (
+@@ -34,9 +35,9 @@ from
+ 				where
+ 					o_custkey = c_custkey
+ 			)
+-	) as custsale
++	) --as custsale
+ group by
+ 	cntrycode
+ order by
+ 	cntrycode;
+-where rownum <= -1;
++--where rownum <= -1;

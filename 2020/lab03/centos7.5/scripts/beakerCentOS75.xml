@@ -1,0 +1,37 @@
+<job retention_tag="scratch">
+  <whiteboard>R8D#CentOS-7.5#x86_64</whiteboard>
+  <recipeSet priority="Normal">
+    <recipe whiteboard="" role="RECIPE_MEMBERS" ks_meta="" kernel_options="" kernel_options_post="">
+      <autopick random="false"/>
+      <watchdog panic="ignore"/>
+      <packages/>
+      <ks_appends/>
+      <repos/>
+      <distroRequires>
+        <and>
+          <distro_family op="=" value="CentOS7"/>
+          <distro_variant op="=" value=""/>
+          <distro_name op="=" value="CentOS-7.5"/>
+          <distro_arch op="=" value="x86_64"/>
+        </and>
+      </distroRequires>
+      <hostRequires force="sgi-uv20-01.khw2.lab.eng.bos.redhat.com"/>
+<!--
+#XXX: DO NOT comply with any system   BUT USE
+#     sgi-uv20-01.khw2.lab.eng.bos.redhat.com
+#     as it has 64 CPU cores and 128GB memory
+      <hostRequires>
+        <system_type value="Machine"/>
+      </hostRequires>
+-->
+      <partitions/>
+      <task name="/distribution/check-install" role="STANDALONE"/>
+      <task name="/distribution/reservesys" role="STANDALONE">
+        <params>
+          <param name="RESERVETIME" value="345600"/>
+        </params>
+      </task>
+      <reservesys duration="345600" when="always"/>
+    </recipe>
+  </recipeSet>
+</job>

@@ -1,0 +1,694 @@
+ID:StartTime:EndTime:StartUnixTime:EndUnixTime:Cost
+>>>>> basename dbgen/queries/stub/01.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=01
+>>>> fmd=/var/tmp/10/t1/testlog01.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/01.sql
+>>>> echo '# Results of running 01.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034211
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663331
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/01.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663373
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034253
+>>>>> get_interval 1609663331 1609663373
+>>>>> typeset a=1609663331
+>>>>> typeset b=1609663373
+>>>>> python3 -c 'print('\''%d'\'' % (1609663373 - 1609663331))'
+>>>> intv=42
+>>>> echo 01.sql:20210103034211:20210103034253:1609663331:1609663373:42
+01.sql:20210103034211:20210103034253:1609663331:1609663373:42
+>>>> echo '# 01.sql:20210103034211:20210103034253:1609663331:1609663373:42 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/02.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=02
+>>>> fmd=/var/tmp/10/t1/testlog02.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/02.sql
+>>>> echo '# Results of running 02.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034253
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663374
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/02.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663378
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034257
+>>>>> get_interval 1609663374 1609663378
+>>>>> typeset a=1609663374
+>>>>> typeset b=1609663378
+>>>>> python3 -c 'print('\''%d'\'' % (1609663378 - 1609663374))'
+>>>> intv=4
+>>>> echo 02.sql:20210103034253:20210103034257:1609663374:1609663378:4
+02.sql:20210103034253:20210103034257:1609663374:1609663378:4
+>>>> echo '# 02.sql:20210103034253:20210103034257:1609663374:1609663378:4 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/03.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=03
+>>>> fmd=/var/tmp/10/t1/testlog03.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/03.sql
+>>>> echo '# Results of running 03.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034257
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663378
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/03.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663401
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034321
+>>>>> get_interval 1609663378 1609663401
+>>>>> typeset a=1609663378
+>>>>> typeset b=1609663401
+>>>>> python3 -c 'print('\''%d'\'' % (1609663401 - 1609663378))'
+>>>> intv=23
+>>>> echo 03.sql:20210103034257:20210103034321:1609663378:1609663401:23
+03.sql:20210103034257:20210103034321:1609663378:1609663401:23
+>>>> echo '# 03.sql:20210103034257:20210103034321:1609663378:1609663401:23 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/04.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=04
+>>>> fmd=/var/tmp/10/t1/testlog04.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/04.sql
+>>>> echo '# Results of running 04.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034321
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663401
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/04.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663419
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034339
+>>>>> get_interval 1609663401 1609663419
+>>>>> typeset a=1609663401
+>>>>> typeset b=1609663419
+>>>>> python3 -c 'print('\''%d'\'' % (1609663419 - 1609663401))'
+>>>> intv=18
+>>>> echo 04.sql:20210103034321:20210103034339:1609663401:1609663419:18
+04.sql:20210103034321:20210103034339:1609663401:1609663419:18
+>>>> echo '# 04.sql:20210103034321:20210103034339:1609663401:1609663419:18 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/05.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=05
+>>>> fmd=/var/tmp/10/t1/testlog05.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/05.sql
+>>>> echo '# Results of running 05.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034339
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663419
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/05.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663444
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034403
+>>>>> get_interval 1609663419 1609663444
+>>>>> typeset a=1609663419
+>>>>> typeset b=1609663444
+>>>>> python3 -c 'print('\''%d'\'' % (1609663444 - 1609663419))'
+>>>> intv=25
+>>>> echo 05.sql:20210103034339:20210103034403:1609663419:1609663444:25
+05.sql:20210103034339:20210103034403:1609663419:1609663444:25
+>>>> echo '# 05.sql:20210103034339:20210103034403:1609663419:1609663444:25 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/06.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=06
+>>>> fmd=/var/tmp/10/t1/testlog06.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/06.sql
+>>>> echo '# Results of running 06.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034403
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663444
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/06.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663456
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034415
+>>>>> get_interval 1609663444 1609663456
+>>>>> typeset a=1609663444
+>>>>> typeset b=1609663456
+>>>>> python3 -c 'print('\''%d'\'' % (1609663456 - 1609663444))'
+>>>> intv=12
+>>>> echo 06.sql:20210103034403:20210103034415:1609663444:1609663456:12
+06.sql:20210103034403:20210103034415:1609663444:1609663456:12
+>>>> echo '# 06.sql:20210103034403:20210103034415:1609663444:1609663456:12 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/07.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=07
+>>>> fmd=/var/tmp/10/t1/testlog07.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/07.sql
+>>>> echo '# Results of running 07.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034416
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663456
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/07.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663477
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034437
+>>>>> get_interval 1609663456 1609663477
+>>>>> typeset a=1609663456
+>>>>> typeset b=1609663477
+>>>>> python3 -c 'print('\''%d'\'' % (1609663477 - 1609663456))'
+>>>> intv=21
+>>>> echo 07.sql:20210103034416:20210103034437:1609663456:1609663477:21
+07.sql:20210103034416:20210103034437:1609663456:1609663477:21
+>>>> echo '# 07.sql:20210103034416:20210103034437:1609663456:1609663477:21 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/08.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=08
+>>>> fmd=/var/tmp/10/t1/testlog08.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/08.sql
+>>>> echo '# Results of running 08.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034437
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663477
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/08.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663496
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034455
+>>>>> get_interval 1609663477 1609663496
+>>>>> typeset a=1609663477
+>>>>> typeset b=1609663496
+>>>>> python3 -c 'print('\''%d'\'' % (1609663496 - 1609663477))'
+>>>> intv=19
+>>>> echo 08.sql:20210103034437:20210103034455:1609663477:1609663496:19
+08.sql:20210103034437:20210103034455:1609663477:1609663496:19
+>>>> echo '# 08.sql:20210103034437:20210103034455:1609663477:1609663496:19 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/09.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=09
+>>>> fmd=/var/tmp/10/t1/testlog09.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/09.sql
+>>>> echo '# Results of running 09.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034455
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663496
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/09.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663531
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034530
+>>>>> get_interval 1609663496 1609663531
+>>>>> typeset a=1609663496
+>>>>> typeset b=1609663531
+>>>>> python3 -c 'print('\''%d'\'' % (1609663531 - 1609663496))'
+>>>> intv=35
+>>>> echo 09.sql:20210103034455:20210103034530:1609663496:1609663531:35
+09.sql:20210103034455:20210103034530:1609663496:1609663531:35
+>>>> echo '# 09.sql:20210103034455:20210103034530:1609663496:1609663531:35 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/10.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=10
+>>>> fmd=/var/tmp/10/t1/testlog10.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/10.sql
+>>>> echo '# Results of running 10.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034530
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663531
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/10.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663576
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034616
+>>>>> get_interval 1609663531 1609663576
+>>>>> typeset a=1609663531
+>>>>> typeset b=1609663576
+>>>>> python3 -c 'print('\''%d'\'' % (1609663576 - 1609663531))'
+>>>> intv=45
+>>>> echo 10.sql:20210103034530:20210103034616:1609663531:1609663576:45
+10.sql:20210103034530:20210103034616:1609663531:1609663576:45
+>>>> echo '# 10.sql:20210103034530:20210103034616:1609663531:1609663576:45 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/11.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=11
+>>>> fmd=/var/tmp/10/t1/testlog11.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/11.sql
+>>>> echo '# Results of running 11.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034616
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663576
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/11.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663580
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034620
+>>>>> get_interval 1609663576 1609663580
+>>>>> typeset a=1609663576
+>>>>> typeset b=1609663580
+>>>>> python3 -c 'print('\''%d'\'' % (1609663580 - 1609663576))'
+>>>> intv=4
+>>>> echo 11.sql:20210103034616:20210103034620:1609663576:1609663580:4
+11.sql:20210103034616:20210103034620:1609663576:1609663580:4
+>>>> echo '# 11.sql:20210103034616:20210103034620:1609663576:1609663580:4 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/12.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=12
+>>>> fmd=/var/tmp/10/t1/testlog12.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/12.sql
+>>>> echo '# Results of running 12.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034620
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663580
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/12.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663599
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034638
+>>>>> get_interval 1609663580 1609663599
+>>>>> typeset a=1609663580
+>>>>> typeset b=1609663599
+>>>>> python3 -c 'print('\''%d'\'' % (1609663599 - 1609663580))'
+>>>> intv=19
+>>>> echo 12.sql:20210103034620:20210103034638:1609663580:1609663599:19
+12.sql:20210103034620:20210103034638:1609663580:1609663599:19
+>>>> echo '# 12.sql:20210103034620:20210103034638:1609663580:1609663599:19 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/13.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=13
+>>>> fmd=/var/tmp/10/t1/testlog13.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/13.sql
+>>>> echo '# Results of running 13.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034638
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663599
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/13.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663613
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034652
+>>>>> get_interval 1609663599 1609663613
+>>>>> typeset a=1609663599
+>>>>> typeset b=1609663613
+>>>>> python3 -c 'print('\''%d'\'' % (1609663613 - 1609663599))'
+>>>> intv=14
+>>>> echo 13.sql:20210103034638:20210103034652:1609663599:1609663613:14
+13.sql:20210103034638:20210103034652:1609663599:1609663613:14
+>>>> echo '# 13.sql:20210103034638:20210103034652:1609663599:1609663613:14 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/14.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=14
+>>>> fmd=/var/tmp/10/t1/testlog14.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/14.sql
+>>>> echo '# Results of running 14.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034653
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663613
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/14.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663625
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034705
+>>>>> get_interval 1609663613 1609663625
+>>>>> typeset a=1609663613
+>>>>> typeset b=1609663625
+>>>>> python3 -c 'print('\''%d'\'' % (1609663625 - 1609663613))'
+>>>> intv=12
+>>>> echo 14.sql:20210103034653:20210103034705:1609663613:1609663625:12
+14.sql:20210103034653:20210103034705:1609663613:1609663625:12
+>>>> echo '# 14.sql:20210103034653:20210103034705:1609663613:1609663625:12 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/15.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=15
+>>>> fmd=/var/tmp/10/t1/testlog15.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/15.sql
+>>>> echo '# Results of running 15.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034705
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663625
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/15.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663640
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034719
+>>>>> get_interval 1609663625 1609663640
+>>>>> typeset a=1609663625
+>>>>> typeset b=1609663640
+>>>>> python3 -c 'print('\''%d'\'' % (1609663640 - 1609663625))'
+>>>> intv=15
+>>>> echo 15.sql:20210103034705:20210103034719:1609663625:1609663640:15
+15.sql:20210103034705:20210103034719:1609663625:1609663640:15
+>>>> echo '# 15.sql:20210103034705:20210103034719:1609663625:1609663640:15 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/16.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=16
+>>>> fmd=/var/tmp/10/t1/testlog16.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/16.sql
+>>>> echo '# Results of running 16.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034719
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663640
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/16.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663645
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034724
+>>>>> get_interval 1609663640 1609663645
+>>>>> typeset a=1609663640
+>>>>> typeset b=1609663645
+>>>>> python3 -c 'print('\''%d'\'' % (1609663645 - 1609663640))'
+>>>> intv=5
+>>>> echo 16.sql:20210103034719:20210103034724:1609663640:1609663645:5
+16.sql:20210103034719:20210103034724:1609663640:1609663645:5
+>>>> echo '# 16.sql:20210103034719:20210103034724:1609663640:1609663645:5 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/17.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=17
+>>>> fmd=/var/tmp/10/t1/testlog17.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/17.sql
+>>>> echo '# Results of running 17.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034724
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663645
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/17.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663661
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034741
+>>>>> get_interval 1609663645 1609663661
+>>>>> typeset a=1609663645
+>>>>> typeset b=1609663661
+>>>>> python3 -c 'print('\''%d'\'' % (1609663661 - 1609663645))'
+>>>> intv=16
+>>>> echo 17.sql:20210103034724:20210103034741:1609663645:1609663661:16
+17.sql:20210103034724:20210103034741:1609663645:1609663661:16
+>>>> echo '# 17.sql:20210103034724:20210103034741:1609663645:1609663661:16 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/18.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=18
+>>>> fmd=/var/tmp/10/t1/testlog18.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/18.sql
+>>>> echo '# Results of running 18.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034741
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663661
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/18.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663698
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034818
+>>>>> get_interval 1609663661 1609663698
+>>>>> typeset a=1609663661
+>>>>> typeset b=1609663698
+>>>>> python3 -c 'print('\''%d'\'' % (1609663698 - 1609663661))'
+>>>> intv=37
+>>>> echo 18.sql:20210103034741:20210103034818:1609663661:1609663698:37
+18.sql:20210103034741:20210103034818:1609663661:1609663698:37
+>>>> echo '# 18.sql:20210103034741:20210103034818:1609663661:1609663698:37 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/19.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=19
+>>>> fmd=/var/tmp/10/t1/testlog19.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/19.sql
+>>>> echo '# Results of running 19.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034818
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663699
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/19.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663717
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034836
+>>>>> get_interval 1609663699 1609663717
+>>>>> typeset a=1609663699
+>>>>> typeset b=1609663717
+>>>>> python3 -c 'print('\''%d'\'' % (1609663717 - 1609663699))'
+>>>> intv=18
+>>>> echo 19.sql:20210103034818:20210103034836:1609663699:1609663717:18
+19.sql:20210103034818:20210103034836:1609663699:1609663717:18
+>>>> echo '# 19.sql:20210103034818:20210103034836:1609663699:1609663717:18 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/20.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=20
+>>>> fmd=/var/tmp/10/t1/testlog20.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/20.sql
+>>>> echo '# Results of running 20.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034836
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663717
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/20.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663735
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034855
+>>>>> get_interval 1609663717 1609663735
+>>>>> typeset a=1609663717
+>>>>> typeset b=1609663735
+>>>>> python3 -c 'print('\''%d'\'' % (1609663735 - 1609663717))'
+>>>> intv=18
+>>>> echo 20.sql:20210103034836:20210103034855:1609663717:1609663735:18
+20.sql:20210103034836:20210103034855:1609663717:1609663735:18
+>>>> echo '# 20.sql:20210103034836:20210103034855:1609663717:1609663735:18 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/21.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=21
+>>>> fmd=/var/tmp/10/t1/testlog21.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/21.sql
+>>>> echo '# Results of running 21.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034855
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663735
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/21.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663777
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034937
+>>>>> get_interval 1609663735 1609663777
+>>>>> typeset a=1609663735
+>>>>> typeset b=1609663777
+>>>>> python3 -c 'print('\''%d'\'' % (1609663777 - 1609663735))'
+>>>> intv=42
+>>>> echo 21.sql:20210103034855:20210103034937:1609663735:1609663777:42
+21.sql:20210103034855:20210103034937:1609663735:1609663777:42
+>>>> echo '# 21.sql:20210103034855:20210103034937:1609663735:1609663777:42 #'
+>>>> echo '```'
+>>>> for i in '$(ls -1 dbgen/queries/stub/*.sql)'
+>>>> set -x
+>>>>> basename dbgen/queries/stub/22.sql
+>>>>> awk -F. '{print $1}'
+>>>> idx=22
+>>>> fmd=/var/tmp/10/t1/testlog22.md
+>>>> echo '```'
+>>>>> basename dbgen/queries/stub/22.sql
+>>>> echo '# Results of running 22.sql'
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> start_dt=20210103034937
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> start_ts=1609663777
+>>>> dbgen/queries/runsql.sh -v dbgen/queries/stub/22.sql
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> end_ts=1609663782
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> end_dt=20210103034941
+>>>>> get_interval 1609663777 1609663782
+>>>>> typeset a=1609663777
+>>>>> typeset b=1609663782
+>>>>> python3 -c 'print('\''%d'\'' % (1609663782 - 1609663777))'
+>>>> intv=5
+>>>> echo 22.sql:20210103034937:20210103034941:1609663777:1609663782:5
+22.sql:20210103034937:20210103034941:1609663777:1609663782:5
+>>>> echo '# 22.sql:20210103034937:20210103034941:1609663777:1609663782:5 #'
+>>>> echo '```'
+>>>>> get_unixtime
+>>>>> python3 -c 'import time; print('\''%.0f'\'' % time.time())'
+>>>> total_end_ts=1609663782
+>>>>> get_datetime
+>>>>> date +%Y%m%d%H%M%S
+>>>> total_end_dt=20210103034941
+>>>>> get_interval 1609663331 1609663782
+>>>>> typeset a=1609663331
+>>>>> typeset b=1609663782
+>>>>> python3 -c 'print('\''%d'\'' % (1609663782 - 1609663331))'
+>>>> total_intv=451
+>>>> echo TOTAL#:20210103034210:20210103034941:1609663331:1609663782:451
+TOTAL#:20210103034210:20210103034941:1609663331:1609663782:451
